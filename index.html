@@ -1,0 +1,279 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-container">
+                <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                    <span>Adithhh</span>
+                </div>
+                <div class="links">
+                    <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#Home">Home</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#About">About</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#Project">Project</a></div>
+
+                </div>
+                    <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#Contact">Contact Us</a></div>
+
+                <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+            </div>
+            <div class="dropdown">
+                <div class="links">
+                    <a href="#Home" class="active">Home</a>
+                    <a href="#About">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#Project">Project</a>
+
+                    <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                </div>
+            </div>
+        </nav>
+            <section id="Home">
+                <div class="main-container">
+                    <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                        <img src="images/saya/badai.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Adith</span></h1>
+                        <h1 class="multiple-text"></h1>
+                        <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">I am Adithia Farras, 16 years old and can work as a UI/UX Designer & Fullstack Developer, if you are interested in my skills, you can download my CV below.</p>
+                        <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                            <a href="https://www.instagram.com/just.adithh/" ><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/just-dithhh"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/adithia-farras-0924b4347/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                            <button id="download-cv" class="btn-primary">Download CV</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+            <script>
+            AOS.init({offset:0});
+            </script>
+            <script>
+                function hamburg(){
+                    const navbar = document.querySelector(".dropdown")
+                    navbar.style.transform = "translateY(0px)"
+                }
+                function cancel(){
+                    const navbar = document.querySelector(".dropdown")
+                    navbar.style.transform = "translateY(-500px)"
+                }
+            </script>
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            <script src="main.js"></script>
+            <br>
+            <br>
+        <section class="about" id="About"data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+            <div class="container">
+                    <h2 class="title">About me</h2>
+                    <div class="about-me">
+                        <img src="images/saya/badai.jpg" alt="Profile Picture" class="profile-img">
+                        <div class="text-content">
+                            <h3 class="name">Hey There! I am Adithia Farras</h3>
+                            <p>I am currently studying high school which focuses on programming, I am currently in the 2nd grade and will soon be doing an internship and will graduate from high school in approximately 1 year.</p>
+                            <p>Educational Background</p>
+                            <p>- SD Al Irsyad Al Islamiyyah 02 Purwokerto</p>
+                            <p>- SMP AL Irsyad Al Islamiyyah Purwokerto</p>
+                            <p>- SMK Telkom Purwokerto</p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <div class="title">
+                <h2 class="section-title aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">My Skills</h2>
+            </div>
+            <div class="content">
+                <div class="column col-left">
+                    <h2 class="content-title aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">My Skills and Experiences</h2>
+                    <div class="paragraph-text aos-init aos-animate" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="300">I am a Fullstack Developer and UI/UX Designer with strong expertise in both technical development and creative design. On the development side, I have experience building scalable web applications using modern technologies such as React, Node.js, and various databases (SQL & NoSQL). I am also skilled in version control, deployment, and cloud environments.
+
+As a UI/UX Designer, I specialize in creating user-centered designs through wireframes, prototypes, and high-fidelity interfaces using tools like Figma and Adobe XD. I focus on accessibility, usability, and delivering visually appealing yet functional solutions.
+
+With the ability to bridge design and development, I bring a unique perspective that ensures seamless collaboration between creativity and technology, resulting in products that are both effective and user-friendly.</div>
+                </div>
+                <div class="column col-right">
+                    <div class="bar html">
+                        <div class="info aos-init" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="100">
+                            <span>HTML</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="line aos-init" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="140"></div>
+                    </div>
+                    <div class="bar css">
+                        <div class="info aos-init" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
+                            <span>CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line aos-init" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="240"></div>
+                    </div>
+                    <div class="bar javascript">
+                        <div class="info aos-init" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300">
+                            <span>Javascript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line aos-init" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="340"></div>
+                    </div>
+                    <div class="bar python">
+                        <div class="info aos-init" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="400">
+                            <span>Python</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="line aos-init" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="440"></div>
+                    </div>
+                    <div class="bar php">
+                        <div class="info aos-init" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="500">
+                            <span>PHP</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="line aos-init" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="540"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section class="project" id="Project">
+            <h2>My Project Overall</h2>
+            <div class="project-list">
+                <div class="project-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <img src="images/project/web4.png" alt="P1" class="project-image">
+                    <h4 class="project-name">Project 1</h4>
+                    <p>This is a project I have created and used</p>
+                    <br>
+                    <a href="https://www.figma.com/design/kXpZxdStmuJ52CnDFopRwS/Untitled?node-id=0-1&t=yGlyDhMp2GZ3Be72-1" class="btn-primary">See Design</a>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200" data-aos-anchor-placement="top-bottom">
+                    <img src="images/project/web5.png" alt="P2" class="project-image">
+                    <h4 class="project-name">Project 2</h4>
+                    <p>This is a project I have created and used</p>
+                    <br>
+                    <a href="https://www.figma.com/design/0wu0PIeFnKgZjjZXSG7uRw/Dutchki-99?node-id=0-67&t=J2Z4Un8CpGTqkk0a-1" class="btn-primary">See Design</a>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400" data-aos-anchor-placement="top-bottom">
+                    <img src="images/project/web3.jpg" alt="P3" class="project-image">
+                    <h4 class="project-name">Project 3</h4>
+                    <p>This is a project I have created and used</p>
+                    <br>
+                    <a href="https://www.figma.com/design/PHXNPH9ewayQ3gnr6ii8yS/web-ui-ux-logo?node-id=1-2&t=Il8WKRQYc3SNm4bp-1" class="btn-primary">See Design</a>
+                </div>           
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section class="container-aa" id="Contact" data-aos="fade-left" data-aos-duration="1200">
+            <span class="big-circle"></span>
+            <div class="form">
+            <div class="contact-info">
+                <h3 class="title">Let's get in touch</h3>
+                <p class="text">
+                Tertarik bos? langsung bisa isi form ajah bray
+                dijamin kinerja mantap cekatan dan benar
+                </p>
+                <div class="info">
+                <div class="information">
+                    <img src="images/contact/location.png" class="icon" alt="" />
+                    <p>Jl.Patriot no.66, Purwokerto Selatan</p>
+                </div>
+                <div class="information">
+                    <img src="images/contact/email.png" class="icon" alt="" />
+                    <p>adithiafarras12@gmail.com</p>
+                </div>
+                <div class="information">
+                    <img src="images/contact/phone.png" class="icon" alt="" />
+                    <p>+62 813 8304 5066</p>
+                </div>
+                </div>
+    
+                <div class="social-media">
+                <p>Connect with us :</p>
+                <div class="social-icons">
+                    <a href="https://github.com/just-dithhh">
+                    <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/just.adithh/">
+                    <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/adithia-farras-0924b4347/">
+                    <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+    
+            <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+    
+                <form action="process_contact.php" method="post" autocomplete="off">
+                <h3 class="title">Contact us</h3>
+                <div class="input-container">
+                    <input type="text" name="name" class="input" required/>
+                    <label for="">Username</label>
+                    <span>Username</span>
+                </div>
+                <div class="input-container">
+                    <input type="email" name="email" class="input" required/>
+                    <label for="">Email</label>
+                    <span>Email</span>
+                </div>
+                <div class="input-container">
+                    <input type="tel" name="phone" class="input" required/>
+                    <label for="">Phone</label>
+                    <span>Phone</span>
+                </div>
+                <div class="input-container textarea">
+                    <textarea name="message" class="input" required></textarea>
+                    <label for="">Message</label>
+                    <span>Message</span>
+                </div>
+                <input type="submit" value="Send" class="btnsend" />
+                </form>
+            </div>
+            </div>
+        </section>
+        <script src="app.js"></script>
+        <footer>
+            <div class="icon-list">
+                <div class="footer-icons">
+                    <a href="https://www.instagram.com/just.adithh/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+                </div>
+                <div class="footer-icons">
+                    <a href="https://www.linkedin.com/in/adithia-farras-0924b4347/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+                </a>
+                </div>
+                <div class="footer-icons">
+                    <a href="https://github.com/just-dithhh">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                </div>
+            </div>
+                <p>&#169; 2024 - All Rights Reserved.</p>
+            </footer>
+            <script src="script.js"></script>
+    </body>
+    </html>
