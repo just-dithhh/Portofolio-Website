@@ -935,10 +935,12 @@
         });
     </script>
     <script>
-        // Download CV button
-        document.getElementById('download-cv').addEventListener('click', function() {
-            alert('Download CV functionality can be added here.');
-        });
-    </script>
+document.getElementById('download-cv').addEventListener('click', function () {
+    const link = document.createElement('a');
+    link.href = 'CV/cv.pdf'; // Sesuaikan dengan lokasi file CV
+    link.download = 'CV.pdf';
+    link.click();
+});
+</script>
 </body>
 </html>
